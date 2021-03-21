@@ -1,0 +1,52 @@
+{
+  "name": "frogtoberfest",
+  "version": "1.0.0",
+  "description": "Web app to track your progress for Frogtoberfest.",
+  "main": "index.js",
+  "private": true,
+  "author": "Ian Jenkins",
+  "license": "MIT",
+  "repository": "git@github.com:leapfrogtechnology/frogtoberfest.git",
+  "keywords": [
+    "hacktoberfest",
+    "frogtoberfest"
+  ],
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "tailwind-gen": "node ./node_modules/tailwindcss/lib/cli.js build ./tailwind-gen.css -c ./tailwind.js -o ./src/tailwind.css",
+    "eslint": "eslint src",
+    "eslint:fix": "eslint --fix src",
+    "lint": "yarn prettier && yarn eslint",
+    "lint:fix": "yarn prettier:fix && yarn eslint:fix",
+    "prettier": "prettier \"{src,api}/**/*.js\"",
+    "prettier:fix": "prettier --write \"{src,api}/**/*.js\""
+  },
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-helmet": "^5.2.0",
+    "react-router-dom": "^5.1.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "10.1.0",
+    "eslint": "6.6.0",
+    "eslint-config-leapfrog": "^2.0.1",
+    "eslint-plugin-react": "^7.16.0",
+    "prettier": "^1.14.3",
+    "react-scripts": "^3.2.0",
+    "tailwindcss": "^0.6.6"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
